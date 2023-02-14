@@ -39,6 +39,7 @@ Partial Class frmBurger
         '
         Me.lblHeading.AutoSize = True
         Me.lblHeading.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHeading.ForeColor = System.Drawing.Color.Red
         Me.lblHeading.Location = New System.Drawing.Point(222, 22)
         Me.lblHeading.Name = "lblHeading"
         Me.lblHeading.Size = New System.Drawing.Size(358, 39)
@@ -47,20 +48,25 @@ Partial Class frmBurger
         '
         'picPrime
         '
+        Me.picPrime.Image = Global.WeeklyAssignment2.My.Resources.Resources.prime
         Me.picPrime.Location = New System.Drawing.Point(41, 82)
         Me.picPrime.Name = "picPrime"
         Me.picPrime.Size = New System.Drawing.Size(260, 250)
+        Me.picPrime.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picPrime.TabIndex = 1
         Me.picPrime.TabStop = False
+        Me.picPrime.Visible = False
         '
         'btnPrime
         '
+        Me.btnPrime.BackColor = System.Drawing.Color.Wheat
+        Me.btnPrime.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPrime.Location = New System.Drawing.Point(103, 357)
         Me.btnPrime.Name = "btnPrime"
         Me.btnPrime.Size = New System.Drawing.Size(128, 35)
         Me.btnPrime.TabIndex = 3
         Me.btnPrime.Text = "Prime Beef"
-        Me.btnPrime.UseVisualStyleBackColor = True
+        Me.btnPrime.UseVisualStyleBackColor = False
         '
         'lblInstructions
         '
@@ -81,46 +87,57 @@ Partial Class frmBurger
         Me.lblConfirmation.Size = New System.Drawing.Size(210, 22)
         Me.lblConfirmation.TabIndex = 7
         Me.lblConfirmation.Text = "Enjoy your burger special"
+        Me.lblConfirmation.Visible = False
         '
         'picVeggie
         '
+        Me.picVeggie.Image = Global.WeeklyAssignment2.My.Resources.Resources.veggie
         Me.picVeggie.Location = New System.Drawing.Point(487, 82)
         Me.picVeggie.Name = "picVeggie"
         Me.picVeggie.Size = New System.Drawing.Size(260, 250)
+        Me.picVeggie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picVeggie.TabIndex = 9
         Me.picVeggie.TabStop = False
+        Me.picVeggie.Visible = False
         '
         'btnSelectMeal
         '
+        Me.btnSelectMeal.BackColor = System.Drawing.Color.Wheat
+        Me.btnSelectMeal.Enabled = False
         Me.btnSelectMeal.Location = New System.Drawing.Point(329, 357)
         Me.btnSelectMeal.Name = "btnSelectMeal"
         Me.btnSelectMeal.Size = New System.Drawing.Size(128, 35)
         Me.btnSelectMeal.TabIndex = 10
         Me.btnSelectMeal.Text = "Select Meal"
-        Me.btnSelectMeal.UseVisualStyleBackColor = True
+        Me.btnSelectMeal.UseVisualStyleBackColor = False
         '
         'btnVeggie
         '
+        Me.btnVeggie.BackColor = System.Drawing.Color.Wheat
+        Me.btnVeggie.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnVeggie.Location = New System.Drawing.Point(562, 357)
         Me.btnVeggie.Name = "btnVeggie"
         Me.btnVeggie.Size = New System.Drawing.Size(128, 35)
         Me.btnVeggie.TabIndex = 11
         Me.btnVeggie.Text = "Veggie"
-        Me.btnVeggie.UseVisualStyleBackColor = True
+        Me.btnVeggie.UseVisualStyleBackColor = False
         '
         'btnExit
         '
+        Me.btnExit.BackColor = System.Drawing.Color.Wheat
+        Me.btnExit.Enabled = False
         Me.btnExit.Location = New System.Drawing.Point(329, 487)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(128, 35)
         Me.btnExit.TabIndex = 12
         Me.btnExit.Text = "Exit Window"
-        Me.btnExit.UseVisualStyleBackColor = True
+        Me.btnExit.UseVisualStyleBackColor = False
         '
         'frmBurger
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FloralWhite
         Me.ClientSize = New System.Drawing.Size(778, 534)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnVeggie)
